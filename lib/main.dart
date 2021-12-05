@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'features/short_link_page/views/pages/short_link_page.dart';
+
 void main() {
   runApp(MyApp());
 }
@@ -8,21 +10,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: MyHomePage(),
-    );
-  }
-}
-
-class MyHomePage extends StatelessWidget {
-  MyHomePage({Key? key}) : super(key: key);
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      body: Center(
-        child: Column(
-          
-        ),
-      ),
+      home: ShortLinkPage(),
     );
   }
 }
